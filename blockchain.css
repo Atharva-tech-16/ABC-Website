@@ -1,0 +1,143 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: #B5B6B6;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #010000;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #3EB0B4;
+    text-decoration: none;
+}
+
+h1, h2 {
+    color: #3EB0B4;
+}
+
+h1{
+    font-size: xx-large;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+    border: 1px solid #010000;
+    padding: 20px;
+    background-color: #000100;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 30%;
+    margin: 1%;
+    border: 2px solid #3EB0B4;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+} 
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea, button {
+    margin-top: 5px;
+    padding: 10px;
+}
+
+button {
+    background-color: #3EB0B4;
+    border: none;
+    color: #000000;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #B5B6B6;
+}
+
+.event {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.event-details {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #010000;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.lightbox-content {
+    position: relative;
+    margin: auto;
+    width: 80%;
+    max-width: 700px;
+}
+
+.lightbox img {
+    width: 100%;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #FFFFFF;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #010000;
+    color: #B5B6B6;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #3EB0B4;
+    text-decoration: none;
+}
